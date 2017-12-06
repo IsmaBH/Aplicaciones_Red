@@ -9,7 +9,6 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 #include "header.h"
-#include "handler.h"
 
 #define SERVERPORT "69"		// the port users will be connecting to
 
