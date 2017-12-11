@@ -270,6 +270,7 @@ main (int argc, char *argv[])
 	}
       //The transfer has finalized
       printf ("Final packet sended, num_block: %u\n", num_block);
+      rcv_bytes = recvfrom (sockfd, rcv_buffer, ACK_PACKET_SIZE, 0, p->ai_addr, &p->ai_addrlen);
       fclose (snd_file);
       break;
 
